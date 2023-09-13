@@ -1,0 +1,22 @@
+{
+  "name": "healthxp-web-tests",
+  "version": "1.0.0",
+  "description": "Projeto de automação de testes E2E em Cypress",
+  "main": "index.js",
+  "scripts": {
+    "headless": "npx cypress run",
+    "cypress": "npx cypress open"
+  },
+  "keywords": [
+    "cypress",
+    "healthxp",
+    "e2s"
+  ],
+  "author": "Samuel Leite",
+  "license": "MIT",
+  "devDependencies": {
+    "cypress": "^12.17.0",
+    "dotenv": "^16.3.1",
+    "pg": "^8.11.1"
+  }
+}

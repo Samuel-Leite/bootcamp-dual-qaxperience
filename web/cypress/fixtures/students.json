@@ -1,0 +1,51 @@
+{
+    "create": {
+        "name": "Jeremy Addams",
+        "email": "jeremy@addams.com",
+        "age": "31",
+        "weight": "71",
+        "feet_tall": "1.70"
+    },
+    "duplicate": {
+        "name": "Bruce Wayne",
+        "email": "bruce@wayne.com",
+        "age": "41",
+        "weight": "83",
+        "feet_tall": "1.85"
+    },
+    "remove": {
+        "name": "Capitão Rogers",
+        "email": "rogers@avengers.com",
+        "age": "83",
+        "weight": "93",
+        "feet_tall": "1.85"
+    },
+    "required": {
+        "name": "",
+        "email": "",
+        "age": "",
+        "weight": "",
+        "feet_tall": ""
+    },
+    "inv_age": {
+        "name": "Clark Kent",
+        "email": "superman@justice.com",
+        "age": "15",
+        "weight": "50",
+        "feet_tall": "1.60"
+    },
+    "inv_weight": {
+        "name": "Kara Zor-El",
+        "email": "supergirl@justice.com",
+        "age": "32",
+        "weight": "-150",
+        "feet_tall": "1.90"
+    },
+    "inv_feet_tall": {
+        "name": "Hal Jordan",
+        "email": "greenlantern@justice.com",
+        "age": "28",
+        "weight": "68",
+        "feet_tall": "0"
+    }
+}
