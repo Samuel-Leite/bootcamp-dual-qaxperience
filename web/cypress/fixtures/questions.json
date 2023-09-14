@@ -1,0 +1,17 @@
+{
+    "create": {
+        "student": {
+            "name": "Samuel Leite",
+            "email": "samuel@yahoo.com",
+            "age": "30",
+            "weight": "70",
+            "feet_tall": "1.85"
+        },
+        "plan": {
+            "id": 2,
+            "name": "Premium",
+            "price": 99.99
+        },
+        "question": "Qual o melhor termogênico?"
+    }
+}

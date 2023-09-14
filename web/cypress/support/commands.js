@@ -34,19 +34,28 @@ Cypress.Commands.add("adminLogin", () => {
   studentPage.navbar.userLoggedIn(user.name);
 });
 
-Cypress.Commands.add("createEnroll", (dataTest) => {
-
+Cypress.Commands.add("createQuestion", (question) => {
   cy.request({
-    url: Cypress.env('apiHelper') + '/enrolls/',
+    url: `http://localhost:3333/students/${Cypress.env("studentId")}/help-orders`,
+    method: "POST",
+    body: {question}
+  }).then((response) => {
+    expect(response.status).to.eql(201);
+  });
+});
+
+Cypress.Commands.add("createEnroll", (dataTest) => {
+  cy.request({
+    url: Cypress.env("apiHelper") + "/enrolls/",
     method: "POST",
     body: {
       email: dataTest.student.email,
       plan_id: dataTest.plan.id,
-      price: dataTest.plan.price
-    }
-  }).then(response => {
-    expect(response.status).to.eql(201)
-  })
+      price: dataTest.plan.price,
+    },
+  }).then((response) => {
+    expect(response.status).to.eql(201);
+  });
 
   // cy.task("selectStudentId", dataTest.student.email).then((result) => {
   //   cy.request({
@@ -81,17 +90,19 @@ Cypress.Commands.add("createEnroll", (dataTest) => {
 
 Cypress.Commands.add("resetStudent", (student) => {
   cy.request({
-    url: Cypress.env('apiHelper') + '/students',
+    url: Cypress.env("apiHelper") + "/students",
     method: "POST",
     body: student,
   }).then((response) => {
     expect(response.status).to.eql(201);
+    cy.log(response.body.student_id);
+    Cypress.env("studentId", response.body.student_id);
   });
 });
 
 Cypress.Commands.add("deleteStudent", (studentEmail) => {
   cy.request({
-    url: Cypress.env('apiHelper') + '/students/' + studentEmail,
+    url: Cypress.env("apiHelper") + "/students/" + studentEmail,
     method: "DELETE",
   }).then((response) => {
     expect(response.status).to.eql(204);
