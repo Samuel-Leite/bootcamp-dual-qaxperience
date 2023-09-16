@@ -1,5 +1,5 @@
 {
-    "create": {
+    "notification": {
         "student": {
             "name": "Samuel Leite",
             "email": "samuel@yahoo.com",
@@ -13,5 +13,21 @@
             "price": 99.99
         },
         "question": "Qual o melhor termogênico?"
+    },
+    "prof_answer": {
+        "student": {
+            "name": "Horatio Nelson",
+            "email": "horatio@navy.com",
+            "age": "45",
+            "weight": "70",
+            "feet_tall": "1.85"
+        },
+        "plan": {
+            "id": 2,
+            "name": "Premium",
+            "price": 99.99
+        },
+        "question": "Como ganhar massa magra para realizar o exame naval?",
+        "answer": "Comer bastante proteína."
     }
 }
