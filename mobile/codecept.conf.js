@@ -8,7 +8,7 @@ setCommonPlugins();
 
 /** @type {CodeceptJS.MainConfig} */
 exports.config = {
-  tests: "./e2e/*_test.js",
+  tests: "./e2e/orders_test.js",
   output: "./output",
   helpers: {
     Appium: {
@@ -16,11 +16,18 @@ exports.config = {
       platform: "Android",
       device: "emulator",
     },
+    REST: {
+      endpoint: "http://localhost:5000",
+    },
+    JSONResponse: {
+      requestHelper: "REST",
+    },
   },
   include: {
     I: "./support/steps_file.js",
     loginScreen: "./support/screens/login.js",
     account: "./support/screens/account.js",
+    helpOrder: "./support/screens/help-orders.js",
   },
   name: "mobile",
 };

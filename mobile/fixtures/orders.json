@@ -1,0 +1,17 @@
+{
+    "help": {
+        "student": {
+            "name": "Sir Artur Pedragon",
+            "email": "artur@camelot.com",
+            "age": "35",
+            "weight": "78",
+            "feet_tall": "1.85"
+        },
+        "plan": {
+            "id": 2,
+            "name": "Premium",
+            "price": 99.99
+        },
+        "question": "Qual o melhor termogênico?"
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "success_login": {
+        "student": {
+            "name": "Marco Polo",
+            "email": "marco@discovery.com",
+            "age": 32,
+            "weight": 85,
+            "feet_tall": 1.7    
+        },
+        "plan": {
+            "id": 2,
+            "name": "Premium",
+            "price": 99.99
+        }
+    },
+    "not_login": {
+        "student": {
+            "name": "Adam Smith",
+            "email": "adam@economy.com",
+            "age": 42,
+            "weight": 75,
+            "feet_tall": 1.5    
+        },
+        "plan": {
+            "id": 1,
+            "name": "Health",
+            "price": 99.99
+        }
+    }
+}

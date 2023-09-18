@@ -17,6 +17,7 @@
     "express-joi-validation": "^5.0.1",
     "joi": "^17.10.1",
     "nodemon": "^3.0.1",
-    "pg": "^8.11.3"
+    "pg": "^8.11.3",
+    "short-unique-id": "^5.0.2"
   }
 }
