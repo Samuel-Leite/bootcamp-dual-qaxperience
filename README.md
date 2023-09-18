@@ -9,6 +9,8 @@ Segue o projeto E2E da aplicação HealthXp através do Bootcamp Dual Experience
 * Java 11
 * ElephantSQL (acessar o banco de dados)
 * Git e Git Bash
+* Appium e Appium Inspector
+* Android Studio (emulador mobile)
 
 ## Como executar o projeto:
 * Clonar o projeto na máquina local
